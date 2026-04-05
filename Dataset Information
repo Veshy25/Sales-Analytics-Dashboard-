@@ -1,0 +1,28 @@
+**Note:** The dataset used in this project was **AI-generated** using Claude (Anthropic) to simulate a realistic Southeast Asian B2B sales environment. It is intended purely for learning and portfolio demonstration purposes.
+
+| Property | Details |
+|---|---|
+| Source | AI-Generated (Claude by Anthropic) |
+| Format | Microsoft Excel (.xlsx) |
+| Rows | 1467 order records |
+| Columns | 13 fields |
+| Time Period | April 2025 – January 2026 |
+| Countries | 11 Southeast Asian markets |
+| Product Categories | Electronics, Office Equipment, Packaging |
+
+### Data Fields
+| Column | Description |
+|---|---|
+| Order ID | Unique order identifier |
+| Month | Order month (date format) |
+| Country | Destination country |
+| Customer Name | Buyer/client name |
+| Product Category | High-level product grouping |
+| Product Name | Specific product sold |
+| Quantity | Units sold |
+| UOM | Unit of measurement |
+| Base Price | Price per unit before costs |
+| Amount in LC | Total revenue in local currency |
+| Total Packing Cost | Packaging cost per order |
+| Total Freight | Freight/shipping cost per order |
+| Variable Cost Rs per Unit | Variable manufacturing cost per unit |
