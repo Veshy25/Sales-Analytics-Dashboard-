@@ -1,28 +1,53 @@
-**Note:** The dataset used in this project was **AI-generated** using Claude (Anthropic) to simulate a realistic Southeast Asian B2B sales environment. It is intended purely for learning and portfolio demonstration purposes.
+# Dataset Information
+
+> **Note:** The dataset used in this project was **AI-generated** using Claude (Anthropic) to simulate a realistic Southeast Asian B2B sales environment. It is intended purely for learning and portfolio demonstration purposes.
+
+---
+
+## Overview
 
 | Property | Details |
 |---|---|
+| File | Dataset_Project.xlsx |
 | Source | AI-Generated (Claude by Anthropic) |
 | Format | Microsoft Excel (.xlsx) |
-| Rows | 1467 order records |
+| Rows | 1,467 order records |
 | Columns | 13 fields |
 | Time Period | April 2025 – January 2026 |
 | Countries | 11 Southeast Asian markets |
 | Product Categories | Electronics, Office Equipment, Packaging |
 
-### Data Fields
+---
+
+## Data Fields
+
 | Column | Description |
 |---|---|
 | Order ID | Unique order identifier |
 | Month | Order month (date format) |
-| Country | Destination country |
+| Country | Destination country — one of 11 Southeast Asian markets in the dataset |
 | Customer Name | Buyer/client name |
-| Product Category | High-level product grouping |
+| Product Category | High-level product grouping (Electronics, Office Equipment, Packaging) |
 | Product Name | Specific product sold |
 | Quantity | Units sold |
-| UOM | Unit of measurement |
-| Base Price | Price per unit before costs |
-| Amount in LC | Total revenue in local currency |
-| Total Packing Cost | Packaging cost per order |
-| Total Freight | Freight/shipping cost per order |
+| UOM | Unit of measurement (e.g. pcs, box, kg) |
+| Base Price | Price per unit before packing and freight costs |
+| Amount in LC | Total revenue value in the destination country's local currency |
+| Total Packing Cost | Total packaging cost for the order |
+| Total Freight | Total freight/shipping cost for the order |
+| Variable Cost per Unit | Variable manufacturing cost per unit |
+
+---
+
+## How This Data Is Used
+
+This dataset is loaded into **Power BI** via Power Query, where it undergoes cleaning and transformation. Custom **DAX measures** are built on top of it to calculate profitability metrics, revenue trends, and country/product-level performance — all visualised in the Sales Analytics Dashboard.
+
+---
+
+## Data Limitations
+
+- Dataset is AI-generated and does not represent real company or customer data
+- Intended for learning and portfolio demonstration only
+- Currency values across markets are simulated and may not reflect real exchange rates
 | Variable Cost Rs per Unit | Variable manufacturing cost per unit |
